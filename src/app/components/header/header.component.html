@@ -1,4 +1,4 @@
-<nav class="header">
+<nav [ngClass]="open ? 'bg-change' : ''" class="header">
   <div [routerLink]="['/']" class="logo">WeatherNow</div>
   <ul class="list">
     <li [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="list-item">Home</li>

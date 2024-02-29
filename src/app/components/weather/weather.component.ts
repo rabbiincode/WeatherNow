@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { ChartComponent } from '../chart/chart.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ScrollToTopComponent } from '../scroll-to-top/scroll-to-top.component';
 
 @Component({
   selector: 'app-weather',
   standalone: true,
-  imports: [ChartComponent, FooterComponent, HeaderComponent, CommonModule, MatIconModule, RouterLink],
+  imports: [ChartComponent, FooterComponent, HeaderComponent, ScrollToTopComponent, CommonModule, MatIconModule, RouterLink],
   templateUrl: './weather.component.html',
   styleUrl: './weather.component.scss'
 })

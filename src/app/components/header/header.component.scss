@@ -1,5 +1,7 @@
 .header{
+  position: sticky;
   background: #a4a4f8;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,9 +28,10 @@
   cursor: pointer;
 }
 
-.active{
+.active, .list-item:hover{
   border-bottom: 0.3rem solid #022863;
   border-radius: 0 0 0.2rem 0.2rem;
+  margin-bottom: -0.3rem;
 }
 
 mat-icon, .sidebar{
@@ -46,6 +49,9 @@ mat-icon, .sidebar{
     height: 2rem;
     cursor: pointer;
     z-index: 300 !important;
+  }
+  .bg-change{
+    background: rgb(234, 234, 234);
   }
   .sidebar{
     display: block;

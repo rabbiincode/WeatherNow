@@ -2,7 +2,6 @@
   position: fixed;
   background: rgba(234, 234, 234, 0.3);
   height: 100vh;
-  top: 0;
   left: 0;
   right: 0;
   z-index: 100;
@@ -29,26 +28,27 @@
 .list{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   list-style: none;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .list-item{
   width: fit-content;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
-  padding-left: 1.5rem; // change to margin
+  padding-left: 1.5rem;
 }
 
 .list-item:hover{
   opacity: 0.8;
-  border-left: 0.3rem solid #0B5EE7;
+  border-left: 0.3rem solid #022863;
   padding-left: 1.2rem;
 }
 
 .active{
-  border-left: 0.3rem solid #0B5EE7;
+  border-left: 0.3rem solid #022863;
   padding-left: 1.2rem;
 }
 
