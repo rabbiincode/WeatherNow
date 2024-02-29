@@ -1,0 +1,25 @@
+<ng-container>
+  <app-header></app-header>
+  <div class="home">
+    <div class="intro">
+      <p>Welcome to WeatherNow, your reliable companion for all things weather-related!</p>
+      <p>Whether you're planning your daily commute, scheduling outdoor activities, or simply staying informed about local conditions, WeatherNow has you covered.</p>
+      <p>
+        With accurate forecasts, real-time updates, and intuitive features, our app is designed to keep you ahead, no matter where you are.
+        Say goodbye to unexpected weather surprises and hello to seamless planning with WeatherNow at your fingertips.
+      </p>
+      <p class="action">Ready to stay informed and prepared for whatever the weather brings. Let's explore together!</p>
+    </div>
+    <div class="weather">
+      <h2>Weather Forecast Options - <span>Please select any option below.</span></h2>
+      <ul class="options">
+        <li (click)="goToWeather('TOP')">Kansas Forecast (TOP)</li>
+        <li (click)="goToWeather('LWX')">District of Columbia Forecast (LWX)</li>
+      </ul>
+    </div>
+    <div class="img">
+      <div class="background"></div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ng-container>

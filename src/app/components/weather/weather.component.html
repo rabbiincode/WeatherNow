@@ -1,0 +1,32 @@
+<ng-container>
+  <app-header></app-header>
+  <div *ngIf="chartData" class="weather">
+    <div class="header">
+      <h2>{{ location }} Weather Forecast</h2>
+      <button [routerLink]="'/'"><mat-icon>keyboard_arrow_left</mat-icon> Back</button>
+    </div>
+    <button (click)="changeChart()">{{chartType == 'line' ? 'Bar Chart' : 'Line Chart'}}</button>
+    <div class="chart">
+      <canvas id="canvas"></canvas>
+      <app-chart *ngIf="chartType == 'bar'" [chartData]="chartData" [chartType]="chartBar"></app-chart>
+      <app-chart *ngIf="chartType == 'line'" [chartData]="chartData" [chartType]="chartLine"></app-chart>
+    </div>
+  </div>
+  <div class="box">
+    <h2>See Details -</h2>
+    <div class="desc">
+      <select (change)="viewDetails($event)">
+        <option *ngFor="let data of allData" [value]="data?.number">{{data?.name}}</option>
+      </select>
+      <div class="details">
+        <img [src]="detail?.icon" alt="img"/>
+        <p>Temperature: <span>{{detail?.temperature}}°{{detail?.temperatureUnit}}</span></p>
+        <p>Wind Speed: <span>{{detail?.windSpeed}}</span></p>
+        <p>Wind Direction: <span>{{getDirection(detail?.windDirection)}}</span></p>
+        <p class="img">Short Forecast: <span>{{detail?.shortForecast}}</span> <img [src]="getImage(detail?.shortForecast)" alt="img"/></p>
+        <p>Detailed Forecast: <span>{{detail?.detailedForecast}}</span></p>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ng-container>

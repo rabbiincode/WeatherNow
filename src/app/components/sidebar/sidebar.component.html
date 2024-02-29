@@ -1,0 +1,10 @@
+<div class="sidebar animate__animated animate__fadeInDown">
+  <div class="content">
+    <ul class="list">
+      <li [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="sidebarToggle()" class="list-item">Home</li>
+      <li [routerLink]="['/weather/TOP']" routerLinkActive="active" (click)="sidebarToggle()" class="list-item">Weather</li>
+    </ul>
+    <span class="footer">WeatherNow</span>
+  </div>
+  <div class="transparent" (click)="sidebarToggle()"></div>
+</div>
