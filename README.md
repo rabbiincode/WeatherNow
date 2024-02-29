@@ -1,27 +1,45 @@
-# Weather
+# WeatherNow
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
-## Development server
+# Project Title
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Weather Tracking Application
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack
 
-## Build
+**Client:** Angular, SCSS, Angular Material
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Database:** 
+https://api.weather.gov/gridpoints/LWX/31,80/forecast
+https://api.weather.gov/gridpoints/Top/31,80/forecast
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Documentation
+Project Preview Link - https://weather-now-rho.vercel.app
 
-## Running end-to-end tests
+## Installation
+To Run The Project Locally -
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Your device should be compatible with Angular 17 and above
 
-## Further help
+Clone the project with the projects Github link - https://github.com/rabbiincode/WeatherNow
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Open your Terminal
+
+Run the following command -
+ - npm install - to install all project dependencies
+
+- ng serve --o - to open the project on localhost:4200
+
+
+## Authors
+- [@rabbiincode](https://github.com/rabbiincode)
+
+## Contributing
+
+Suggestions and Contributions are always welcomed!
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/successisaiah)
